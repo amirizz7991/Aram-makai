@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+    <link rel="stylesheet" href="style/style.css">
+    <script src="js/script.js"></script>
+</head>
+<body>
+    <div data-role="page" id="home">
+
+        <div data-role="header" data-theme="b">
+            <h1>Sweet Treats Bakery</h1>
+        </div>
+
+        <div data-role="navbar">
+            <ul>
+                <li>
+                    <a href="#home" class="ul-btn-active" data-icon="home">Home</a>
+                </li>
+                <li>
+                    <a href="#product"  data-icon="shop">Products</a>
+                </li>
+                <li>
+                    <a href="#contacts"  data-icon="contact">Contacts</a>
+                </li>
+            </ul>
+        </div>
+
+        <div data-role="content">
+            <h2>Welcome to Our Bakery!</h2>
+            <p>We offer freshly baked cakes, pastries, and breads made with love every day</p>
+            <h3>Features Item</h3>
+
+            <div class="card-grid">
+                <div class="card">
+                    <img src="img/cupcake.jpg" alt="Mini Cupcake">
+                    <h3>Mini Cupcake</h3>
+                    <p>Perfect bite-sized </p>
+                </div>
+                <div class="card">
+                    <img src="img/cookies.jpg" alt="Chocolate cookies">
+                    <h3>Chocolate Cookies</h3>
+                    <p>Delicious soft cookies filled with chocolate chips</p>
+                </div>
+
+                <div class="card">
+                    <img src="img/cake.jpg" alt="Chocolate cake">
+                    <h3>Chocolate Cake</h3>
+                    <p>Rich and moist choclate cake with creamy frosting</p>
+                </div>
+
+                <div class="card">
+                    <img src="img/VanillaCupcakes.webp" alt="Vanilla Cupcake">
+                    <h3>Vanilla Cupcake</h3>
+                    <p>Soft vanilla cake topped with delicious buttercream ising</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div data-role="footer" data-theme="b">
+            <h4 class="footer-text">@ 2026 Sweet Treats Bakery</h4>
+        </div>
+    </div>
+
+
+
+     <div data-role="page" id="product">
+
+        <div data-role="header" data-theme="b">
+            <a href="home" data-icon="home" data-icompos="notext"></a>
+            <h1>Our Product</h1>
+        </div>
+
+     <div data-role="navbar">
+            <ul>
+                <li>
+                    <a href="#home"  class="ul-btn-active" data-icon="home">Home</a>
+                </li>
+                <li>
+                    <a href="#product"  data-icon="shop">Products</a>
+                </li>
+                <li>
+                    <a href="#contacts"  data-icon="contact">Contacts</a>
+                </li>
+            </ul>
+        </div>
+
+        <div data-role="content" class="ul-content">
+            <h2>Our Delicious Products</h2>
+            <p>Click on any product below to view more details</p>
+
+            <ul data-role="listview" data-inset="true" class="product-list">
+
+                <li>
+                    <a href="#" class="product-item">
+                        <img src="img/cake.jpg" alt="Chocolate Cake">
+                        <h2 class="product-name">Chocolate Cake</h2>
+                        <p class="product-description">
+                            Rich and moist chocolate sponge topped with creamy chocolate frosting
+                        </p>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="product-item">
+                        <img src="img/croissant.jpg" alt="Butter Croissant">
+                        <h2 class="product-name">Butter Croissant</h2>
+                        <p class="product-description">
+                            Golden, flaky layers with a soft buttery center
+                        </p>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#" class="product-item">
+                        <img src="img/pastry.jpg" alt="Artisan Bread">
+                        <h2 class="product-name">Artisan Bread</h2>
+                        <p class="product-description">
+                            Handcraft crusty bread baked fresh every morning
+                        </p>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+
+        <div data-role="page" id="contacts">
+
+        <div data-role="header" data-theme="b">
+            <a href="#home" data-icon="home" data-icompos="notext"></a>
+        </div>
+
+        <div data-role="navbar">
+            <ul>
+                <li>
+                    <a href="#home" class="ul-btn-active" data-icon="home">Home</a>
+                </li>
+                <li>
+                    <a href="#product"  data-icon="shop">Products</a>
+                </li>
+                <li>
+                    <a href="#contacts"  data-icon="contact">Contacts</a>
+                </li>
+            </ul>
+        </div>
+        </div>
+        
+
+        <div data-role="content">
+            <h2>Get in Touch</h2>
+            <p>We'd love to hear from you! Please fill out the form below</p>
+        
+
+        <form id="contactForm">
+            <label for="name">Name: </label>
+            <input type="text" name="name" placeholder="Your Name">
+
+            <label for="email">Email: </label>
+            <input type="email" name="email" placeholder="infg@gmail.com">
+
+            <label for="message">Message: </label>
+            <textarea name="message" id="message" placeholder="Type your message here..."></textarea>
+
+            <input type="submit" value="Send Message " data-theme="b">
+        </form>
+
+        </div>
+
+        
+        <div data-role="footer" data-theme="b">
+            <h4 class="footer-text">@ 2026 Sweet Treats Bakery</h4>
+        </div>
+        </div>
+</body>
+</html>
